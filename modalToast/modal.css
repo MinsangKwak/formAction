@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .toastModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    display: none;
+  }
+
+  .toastModal.show {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+  }
+  .toastModal::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+  .toastModal.show::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal {
+    z-index: 20;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+  }
+
+  .toastModal.show .modal {
+    transform: translateY(0);
+  }
+
+  .slide-in-from-bottom {
+    animation: slideInFromBottom 0.5s ease-out;
+  }
+
+  .slide-out-to-bottom {
+    animation: slideOutToBottom 0.5s ease-in;
+  }
+
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideOutToBottom {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  .modalTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #btnModalClose {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .modalContent {
+    margin-bottom: 10px;
+  }

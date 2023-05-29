@@ -15,9 +15,18 @@ login form for test
 ### file tree
 
 📦form
+┣ 📂accoridan
+┃ ┣ 📜accordian.js
+┃ ┣ 📜dropDown.html
+┃ ┗ 📜style.css
+┣ 📂card
+┃ ┣ 📜uiSample.css
+┃ ┣ 📜uiSample.html
+┃ ┗ 📜uiSample.js
+┣ 📂modalToast
+┃ ┣ 📜modal.css
+┃ ┣ 📜modal.html
+┃ ┗ 📜modal.js
 ┣ 📜Readme.md
-┣ 📜accordian.js
-┣ 📜dropDown.html
 ┣ 📜index.html
-┣ 📜style.css
 ┗ 📜validate.js

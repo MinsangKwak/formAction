@@ -1,0 +1,11 @@
+*{margin:0;padding:0;}
+.data-attr-result {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s;
+}
+  
+.data-attr-result.isActive {
+  opacity: 1;
+  display: block;
+}
