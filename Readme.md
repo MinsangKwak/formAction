@@ -11,3 +11,13 @@ login form for test
 ## css framework
 
 - tailwindcss
+
+### file tree
+
+📦form
+┣ 📜Readme.md
+┣ 📜accordian.js
+┣ 📜dropDown.html
+┣ 📜index.html
+┣ 📜style.css
+┗ 📜validate.js

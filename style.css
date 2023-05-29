@@ -1,0 +1,30 @@
+/* reset */
+*{margin:0;padding:0;line-height:1.4;}
+
+/* accordian */
+.accordian{}
+.accordian p{
+    background-color:blue;
+    padding:10px 4px;
+}
+.accordian ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordian.isOpen ul {
+    max-height: 500px;
+}
+.accordian li{
+    background-color:orange;
+    padding:10px 4px;
+}
+.accordian li:nth-of-type(even){
+    background-color:red;
+}
+
+/* hidden */
+.hidden {
+  opacity: 0;
+}
